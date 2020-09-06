@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-areas: "firstlogo rightmenu";
+  grid-template-columns: 150px auto;
+  color: white;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+header #firstlogo {
+  grid-area: firstlogo;
+}
+
+header #rightmenu {
+  grid-area: rightmenu;
+}
+
+header ul {
+  list-style: none;
+  padding: 10px;
+}
+
+header ul li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+header ul li:nth-child(3) {
+  border-right: 1px solid white;
+}
+
+.fondo {
+  background-image: url("imgsspotify/premium_dancer.png");
+  height: 60vh;
+  background-color: rgb(80, 155, 245);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: white;
+}
+
+.primercontenido {
+  margin-top: 60px;
+  width: 100%;
+  margin-left: 30px;
+  display: grid;
+  grid-template-rows: 100px 75px 50px;
+  grid-template-areas:
+    "firstTitulo"
+    "despues"
+    "verPlanespr"
+    "terms";
+}
+
+.primercontenido #firstTitulo {
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+  grid-area: firstTitulo;
+}
+
+.primercontenido .verPlanespr {
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.razonespremium {
+  width: 100%;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 275px 275px 275px 275px;
+  grid-template-rows: 100px 300px;
+  grid-template-areas:
+    "whyPremium"
+    "razones";
+}
+
+.razonespremium img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.razonespremium #whyPremium {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  grid-area: whyPremium;
+  height: 100vh;
+  width: 100vw;
+}
+
+.razonespremium .razones {
+  grid-area: razones;
+  display: flex;
+  margin-left: 600px;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.freemonth {
+  background-color: rgb(22, 59, 228);
+  border-radius: 8px;
+  color: white;
+  width: 100px;
+}
+
+.btn {
+  background-color: rgb(29, 185, 84);
+  border-radius: 500px;
+  color: white;
+  width: 250px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.elegirPremium {
+  width: 100%;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 125px auto;
+  grid-template-areas: "chooseTitle"
+    "premiums";
+}
+
+.chooseTitle {
+  grid-area: chooseTitle;
+}
+
+.premiums {
+  margin-left: 100px;
+  grid-area: premiums;
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+
+.footer {
+  background-color: black;
+  color: rgb(114, 103, 103);
+  display: grid;
+  grid-template-rows: 150px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "medioFooter otroFooter";
+}
+
+.footer ul li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.medioFooter {
+  grid-area: medioFooter;
+}
+
+.otroFooter {
+  grid-area: otroFooter;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.listaFoot {
+  list-style: none;
+  padding: 10px;
+}
